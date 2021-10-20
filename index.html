@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bola</title>
+    <style>
+        .bola{
+            width: 100px;
+            height: 100px;
+            box-shadow: 3px 3px 7px #00000077;
+            display: block;
+            margin: 20% auto;
+            border-radius: 100%;
+            transition: 0.3s;
+        }
+        .bola:hover{
+            background-color: blue;
+            transform: scale(1.5);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="bola" onclick="mudaCor()" id="cor"></div>
+    <script>
+        function mudaCor() {
+            document.getElementById('cor').style.backgroundColor = 'red';
+            document.getElementById('cor').style.transform = "scale(1.5)";
+        }
+    </script>
+</body>
+</html>
